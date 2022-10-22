@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alam - Tour & Travel</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- navigation -->
+
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    
+    <a href="#" class="logo"><span>Alam</span>travel</a>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#gallery">gallery</a>
+        <a href="#contact">contact</a>
+    </nav>
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+    </div>
+    <form class="search-bar-container">
+        <input type="seach" id="search-bar" placeholder="serch here..."> 
+        <label for="seach-bar" class="fas fa-search"></label>
+    </form>
+</header>  
+
+<!-- home -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>adventure is worthwhile</h3>
+        <p>discover new places with us, adventure awaits</p>
+        <a href="#packages" class="btn">Discover more</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+    </div>
+    <div class="video-container">
+        <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+<!-- book -->
+
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="images/book-img.svg" alt="Loading">
+        </div>
+    
+
+    <form action="">
+        <div class="inputBox">
+            <h3>Where to</h3>
+            <input type="text" placeholder="place name" required id="a1">
+        </div>
+        <div class="inputBox">
+            <h3>how many</h3>
+            <input type="number" placeholder="number of guests" required id="a2">
+        </div>
+        <div class="inputBox">
+            <h3>arrivals</h3>
+            <input type="date" required id="a3">
+        </div>
+        <div class="inputBox">
+            <h3>leaving</h3>
+            <input type="date" required id="a4">
+        </div>
+        <input type="submit" class="btn" value="book now" onclick="abc()">
+    </form>
+
+</div>
+
+</section>
+
+
+
+<!-- package section -->
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/p-1.jpg" alt="">
+            <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>mumbai</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, atque.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price">
+                Rs 18000 <span>- Rs 25000</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-2.jpg" alt="">
+            <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>hawaii</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, atque.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price">
+                Rs 30000 <span>- Rs 55000</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-3.jpg" alt="">
+            <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>sydney</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, atque.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price">
+                Rs 26000 <span>- Rs 45000</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-4.jpg" alt="">
+            <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>paris</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, atque.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price">
+                Rs 55500 <span>- Rs 65000</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-5.jpg" alt="">
+            <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>tokyo</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, atque.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price">
+                Rs 100000 <span>- Rs 125000</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-6.jpg" alt="">
+            <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>egypt</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, atque.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price">
+                Rs 118000 <span>- Rs 205000</span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- services -->
+
+<section class="services" id="services">
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>affordable hotels</h3>
+            <p>well-infrastructured hotels and soothing places</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>foods and drinks</h3>
+            <p>explore best cuisine with happiness</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>safty guide</h3>
+            <p>safety and precautions is our first priority</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>around the world</h3>
+            <p>worldwide tour guide services</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>fastest travel</h3>
+            <p>Live life with no excuses, travel with no regret</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>adventure</h3>
+            <p>Whatever you do, don't get stuck in routine.</p>
+        </div>
+
+
+    </div>
+</section>
+
+
+<!-- gallary -->
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/g-1.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images/g-2.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images/g-3.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images/g-4.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images/g-5.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images/g-6.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images/g-7.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images/g-8.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images/g-9.jpg" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- contact -->
+
+<section class="contact" id="contact">
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="images/contact-img.svg" alt="">
+        </div>
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name" required id="b1">
+                <input type="email" placeholder="email" required id="b2">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number" required id="b3">
+                <input type="text" placeholder="subject" required id="b4">
+            </div>
+            <textarea placeholder="message" name=""  cols="30" rows="10" required id="b5"></textarea>
+            <input type="submit" class="btn" value="send message" onclick="def()">
+        </form>
+    </div>
+
+</section>
+
+<!-- footer -->
+<section class="footer">
+
+    <div class="box-container">
+
+        
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="https://www.google.com/maps/place/India/@16.750114,44.0358528,3z/data=!3m1!4b1!4m5!3m4!1s0x30635ff06b92b791:0xd78c4fa1854213a6!8m2!3d20.593684!4d78.96288">india</a>
+            <a href="https://www.google.com/maps/place/United+States/@37.6,-95.665,4z/data=!3m1!4b1!4m5!3m4!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d37.09024!4d-95.712891">USA</a>
+            <a href="https://www.google.com/maps/place/Japan/@33.5001886,137.1538646,4z/data=!3m1!4b1!4m5!3m4!1s0x34674e0fd77f192f:0xf54275d47c665244!8m2!3d36.204824!4d138.252924">japan</a>
+            <a href="https://www.google.com/maps/place/France/@44.8304577,-15.8435592,4z/data=!3m1!4b1!4m5!3m4!1s0xd54a02933785731:0x6bfd3f96c747d9f7!8m2!3d46.227638!4d2.213749">france</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#contact">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/profile.php?id=100009524282767">facebook</a>
+            <a href="https://www.instagram.com/mahboob_alam_/">instagram</a>
+            <a href="https://twitter.com/imahboob4alam">twitter</a>
+            <a href="https://www.linkedin.com/in/mahboob-alam-b494511b7/">linkedin</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span> mahboob alam </span> </h1>
+
+</section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
